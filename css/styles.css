@@ -1,0 +1,97 @@
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;900&display=swap";
+
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width:768px) {
+    h1 {
+        font-size: 10px;
+    }
+
+    .big-text {
+        font-size: 10px;
+    }
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    min-height: 100vh;
+    background-size: cover;
+    flex-direction: column;
+    display: flex;
+    background-position: center center;
+    font-family: "sans-serif";
+    align-items: center;
+    font-family: "Inter";
+
+}
+
+img {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-top: 5rem;
+    color: white;
+
+}
+
+.mh1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 5rem;
+    color: white;
+
+}
+
+.countdown-container {
+    display: flex;
+
+}
+
+.big-text {
+    font-weight: bold;
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+    color: white;
+}
+
+.red {
+    color: red
+}
+
+.countdown-el {
+    text-align: center;
+}
+
+.countdown-el span {
+    font-size: 1.3rem;
+}
+
+span {
+    color: white;
+}
+
+footer {
+    color: gray;
+    margin-top: 10%
+}
+
+.js div#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #000 no-repeat center center;
+}
