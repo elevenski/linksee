@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="shortcut icon" href="https://i.ibb.co/yhvZbVT/OAKLT3f8-400x400.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charSet="utf-8" />
+    <title>Countdown</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        var mobile = (/iphone|ipad|ipod|android|blackberry|mini|windowssce|palm/i.test(navigator.userAgent.toLowerCase()))
+        if (mobile) {
+            document.location = "/mobile.html";
+        }
+    </script>
+</head>
+
+<body class="js">
+    <div id="preloader"></div>
+
+    <img draggable="false" src="https://i.ibb.co/yhvZbVT/OAKLT3f8-400x400.jpg" width="130">
+    <h1>Countdown</h1>
+
+    <div class="countdown-container">
+        <div class="countdown-el days-c">
+            <p class="big-text red" id="days">0</p>
+            <span>DAY</span>
+        </div>
+        <div class="countdown-el hours-c">
+            <p class="big-text red" id="hours">0</p>
+            <span>HRS</span>
+        </div>
+        <div class="countdown-el mins-c">
+            <p class="big-text" id="mins">0</p>
+            <span>MIN</span>
+        </div>
+        <div class="countdown-el seconds-c">
+            <p class="big-text" id="seconds">0</p>
+            <span>SEC</span>
+        </div>
+    </div>
+</body>
+
+</html>
