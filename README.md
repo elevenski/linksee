@@ -1,2 +1,6 @@
-# countdown-website
-Death counter adapted for the movie Countdown.
+# Countdown Website
+### Contact
+* [Discord](https://discord.gg/T4BMtSu)
+
+### Creators / Developers
+👤 Eleven
