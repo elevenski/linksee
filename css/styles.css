@@ -4,16 +4,6 @@
     box-sizing: border-box;
 }
 
-@media (min-width:768px) {
-    h1 {
-        font-size: 10px;
-    }
-
-    .big-text {
-        font-size: 10px;
-    }
-}
-
 body {
     background-color: black;
     margin: 0;
@@ -33,6 +23,7 @@ img {
     -ms-user-select: none;
     user-select: none;
     text-align: center;
+    cursor: help;
 }
 
 h1 {
@@ -45,7 +36,7 @@ h1 {
 
 .mh1 {
     font-weight: 700;
-    font-size: 40px;
+    font-size: 50px;
     margin-top: 5rem;
     color: white;
 
