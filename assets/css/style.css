@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    background-image: url('https://cdn.discordapp.com/attachments/919347423996936212/934787889278095380/theboymovie.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    font-family: "Oswald";
+}
+
+@media only screen and (min-width: 640px) {
+    .countdown-el-el {
+        display: inline-block;
+        padding-right: 3%
+    }
+    .countdown-big-text {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .countdown-big-text {
+        font-size: 4rem;
+    }
+}
+
+.countdown {
+    color: white
+}
+
+.countdown-big-text {
+    font-weight: bold;
+    display: inline-block;
+}
+
+.countdown-small-text {
+    font-size: 1.3rem
+}
+
+.text-red {
+    color: red
+}
