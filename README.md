@@ -15,4 +15,4 @@ Thanks for contributions: `-`
 not needed
 
 ## Discord Server
-<a href="https://discord.gg/P578T3aYbj"><img src="http://invidget.switchblade.xyz/HWjPAAs9d3"/></a>
+<a href="https://discord.gg/HWjPAAs9d3"><img src="http://invidget.switchblade.xyz/HWjPAAs9d3"/></a>
