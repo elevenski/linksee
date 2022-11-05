@@ -40,14 +40,6 @@ function formatTime(time) {
     return time < 10 ? `0${time}` : time;
 }
 
-jQuery(document).ready(function($) {
-    $(window).load(function() {
-        $('#preloader').fadeOut('slow', function() {
-            $(this).remove();
-        });
-    });
-});
-
 countdown();
 
 setInterval(countdown, 1000);

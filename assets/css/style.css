@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 body {
-    background-image: url('https://cdn.discordapp.com/attachments/919347423996936212/934787889278095380/theboymovie.png');
+    background-image: url('/assets/img/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -10,34 +10,36 @@ body {
 }
 
 @media only screen and (min-width: 640px) {
-    .countdown-el-el {
+    .countdownIn {
         display: inline-block;
         padding-right: 3%
     }
-    .countdown-big-text {
+    .countdownBigText {
         font-size: 5rem;
     }
 }
 
 @media only screen and (max-width: 640px) {
-    .countdown-big-text {
+    .countdownBigText {
         font-size: 4rem;
     }
 }
 
 .countdown {
-    color: white
+    color: white;
+    background-color: rgba(0, 0, 0, 0.61);
+    backdrop-filter: blur(6px)
 }
 
-.countdown-big-text {
+.countdownBigText {
     font-weight: bold;
     display: inline-block;
 }
 
-.countdown-small-text {
+.countdownSmallText {
     font-size: 1.3rem
 }
 
-.text-red {
+.textRed {
     color: red
 }

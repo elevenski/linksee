@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="/assets/img/countdown.jpg">
-    <title>Countdown</title>
+    <title>Death? There's an app for that.</title>
     <meta property="og:title" content="Countdown">
     <meta name="og:description"
         content="Death? There's an app for that. Your countdown is waiting. Based on the horror movie Countdown, this app will predict exactly how long is left.">
@@ -14,53 +15,33 @@
     <meta name="theme-color" content="#000000">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel='stylesheet' href='/assets/css/style.css'>
-    <link rel='stylesheet' href='/assets/css/preloader.css'>
-    <script src="/assets/js/countdown.js" defer></script>
-    <script src="/assets/js/preloader.js" defer></script>
-    <div class="preloader">
-        <div class="loader">
-            <div class="ytp-spinner">
-                <div class="ispinner ispinner-large">
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                    <div class="ispinner-blade"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="loader"><p class="countdownSmallText text-white">Created!</p></div>
 </head>
 
 <body>
     <div class="flex-grow md:flex">
-        <div class="absolute p-16 inset-0 flex items-center">
+        <div class="absolute p-0 inset-0 flex items-center">
             <div class="w-full text-center">
                 <div class="countdown">
-                    <div class="countdown-el">
-                        <div class="countdown-el-el">
-                            <p class="countdown-big-text text-red" id="years">0</p>
-                            <span class="countdown-small-text text-red">YRS</span>
-                        </div>
-                        <div class="countdown-el-el">
-                            <p class="countdown-big-text text-red" id="days">0</p>
-                            <span class="countdown-small-text text-red">DAY</span>
-                        </div>
-                        <div class="countdown-el-el">
-                            <p class="countdown-big-text" id="hours">0</p>
-                            <span class="countdown-small-text">HRS</span>
-                        </div>
-                        <div class="countdown-el-el">
-                            <p class="countdown-big-text" id="mins">0</p>
-                            <span class="countdown-small-text">MIN</span>
-                        </div>
-                        <div class="countdown-el-el">
-                            <p class="countdown-big-text" id="seconds">0</p>
-                            <span class="countdown-small-text">SEC</span>
-                        </div>
+                    <div class="countdownIn">
+                        <p class="countdownBigText textRed" id="years">0</p>
+                        <span class="countdownSmallText textRed">YRS</span>
+                    </div>
+                    <div class="countdownIn">
+                        <p class="countdownBigText textRed" id="days">0</p>
+                        <span class="countdownSmallText textRed">DAY</span>
+                    </div>
+                    <div class="countdownIn">
+                        <p class="countdownBigText" id="hours">0</p>
+                        <span class="countdownSmallText">HRS</span>
+                    </div>
+                    <div class="countdownIn">
+                        <p class="countdownBigText" id="mins">0</p>
+                        <span class="countdownSmallText">MIN</span>
+                    </div>
+                    <div class="countdownIn">
+                        <p class="countdownBigText" id="seconds">0</p>
+                        <span class="countdownSmallText">SEC</span>
                     </div>
                 </div>
             </div>
@@ -69,5 +50,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
     integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="/assets/js/countdown.js" defer></script>
+<script src="/assets/js/loader.js" defer></script>
 
 </html>
