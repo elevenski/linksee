@@ -1,0 +1,37 @@
+<% include ./partials/header %>
+
+    <body>
+      
+        <div class="this-is-section">
+            <div class="noclasses mt-3">
+                <p class="un-font">Signup</p>
+                <p>Already have account? <a href="/users/signin">Signin</a></p>
+              <form method="POST" action="/users/signup">
+                <% include ./partials/messages %>
+                <div id="avatar" class="mt-3">
+                    <input class="input-signup" type="url" id="avatar" name="avatar" placeholder="Avatar">
+                </div>
+                <div id="user-name" class="mt-3">
+                    <input class="input-signup" type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div id="user-nickname" class="mt-3">
+                    <input  onkeyup="this.value=this.value.replace(/[^a-z0-9]/g, '')" onkeypress="return event.charCode != 32" class="input-signup" type="text" id="nickname" name="nickname" placeholder="Nickname (no space or special characters)" required>
+                </div>
+                <div id="user-mail" class="mt-3">
+                    <input class="input-signup" type="email" id="email" name="email" placeholder="Mail" required>
+                </div>
+                <div id="user-password" class="mt-3">
+                    <input class="input-signup" type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div id="user-password-confirm" class="mt-3">
+                    <input class="input-signup" type="password" id="password2" name="password2" placeholder="Confirm Password" required>
+                </div>
+              <button type="submit" class="mt-3">OK, Signup</button>
+                </form>
+            </div>
+            <% include ./partials/footer %>
+        </div>
+
+    </body>
+
+    </html>

@@ -1,0 +1,125 @@
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+
+body {
+	font-family: "Inter";
+	background-color: white;
+	color: black;
+    text-decoration: none
+}
+
+img {
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 640px) {
+    .padding {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .home {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .slogan-img-img {
+        width: 28%;
+        padding-top: 2%
+    }
+    .slogan-btn {
+        padding-top: 1%
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .padding {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .home {
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+    .slogan-img-img {
+        width: 80%;
+        padding-top: 7%
+    }
+    .slogan-btn {
+        padding-top: 5%
+    }
+}
+
+.navbar {
+    border-bottom: 1px solid #ebebeb;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.navbar-control-btn {
+    background-color: #059de1;
+    transition: .2s;
+}
+
+.navbar-control-btn:hover {
+    transition: .2s;
+}
+
+.slogan-text {
+    text-align: center;
+    float: center;
+    font-size: 40px;
+}
+
+.slogan-description {
+    text-align: center;
+    float: center;
+}
+
+.slogan-btn-text {
+    text-align: center;
+    float: center;
+}
+
+.yesdecoration {
+    color: unset;
+    text-decoration: underline;
+}
+
+.yesdecoration:hover {
+    color: unset;
+}
+
+.slogan-btn {
+    text-align: center;
+    float: center;
+}
+
+.slogan-btn-btn {
+    text-align: center;
+    float: center;
+    background-color: #059de1;
+    transition: .2s;
+    font-weight: 600;
+}
+
+.navbar-brand:hover {
+    color: unset
+}
+
+.badge-beta {
+    font-size: 12px;
+    background-color: #059de1;
+    padding: 3px 5px;
+}
+
+.slogan-img {
+    text-align: center;
+    float: center;
+    justify-content: center;
+}

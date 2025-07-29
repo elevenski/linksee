@@ -1,0 +1,77 @@
+<% include ./partials/header %>
+
+    <body>
+
+        <div class="this-is-section">
+            <div class="noclasses mt-3">
+                <p class="un-font">Control</p>
+                <p><a href="/<%- user.nickname %>" target="_blank">See Your Page</a></p>
+              <p><a href="/users/signout">Signout</a></p>
+              <br>
+              <p>Settings:</p>
+              <form method="POST" action="/account">
+                <div id="name" class="mt-3">
+                    <input class="input-signup" type="text" id="name" name="name" placeholder="Name" value="<%- user.name || ""%>" required>
+                </div>
+                <div id="account" class="mt-3">
+                    <input class="input-signup" type="url" id="avatar" name="avatar" placeholder="Avatar URL" value="<%- user.avatar || ""%>">
+                </div>
+                <div id="bio" class="mt-3">
+                    <input class="input-signup" type="text" id="bio" name="bio" minLength="3" maxLength="150" placeholder="Bio" value="<%- user.bio || ""%>">
+                </div>
+                <div id="facebook" class="mt-3">
+                    <input class="input-signup" type="text" id="facebook" name="facebook" placeholder="Facebook Name" value="<%- user.facebook || ""%>">
+                </div>
+                <div id="instagram" class="mt-3">
+                    <input class="input-signup" type="text" id="instagram" name="instagram" placeholder="Instagram Name" value="<%- user.instagram || ""%>">
+                </div>
+                  <div id="twitter" class="mt-3">
+                    <input class="input-signup" type="text" id="twitter" name="twitter" placeholder="Twitter Name" value="<%- user.twitter || ""%>">
+                </div>
+                  <div id="youtube" class="mt-3">
+                    <input class="input-signup" type="text" id="youtube" name="youtube" placeholder="YouTube ID" value="<%- user.youtube || ""%>">
+                </div>
+                  <div id="github" class="mt-3">
+                    <input class="input-signup" type="text" id="github" name="github" placeholder="GitHub Name" value="<%- user.github || ""%>">
+                </div>
+
+                <div id="website" class="mt-3">
+                    <input class="input-signup" type="url" id="website" name="website" placeholder="Website URL" value="<%- user.website || ""%>">
+                </div>
+
+                <div id="discord" class="mt-3">
+                    <input class="input-signup" type="text" id="discord" name="discord" placeholder="Discord ID" value="<%- user.discord || ""%>">
+                </div>
+
+                <div id="linkedin" class="mt-3">
+                    <input class="input-signup" type="text" id="linkedin" name="linkedin" placeholder="LinkedIn Name" value="<%- user.linkedin || ""%>">
+                </div>
+                <div id="twitch" class="mt-3">
+                    <input class="input-signup" type="text" id="twitch" name="twitch" placeholder="Twitch Name" value="<%- user.twitch || ""%>">
+                </div>
+                <div id="mail" class="mt-3">
+                    <input class="input-signup" type="email" id="mail" name="mail" placeholder="Mail Adress" value="<%- user.mail || ""%>">
+                </div>
+                <button type="submit" class="mt-3">OK, Save</button>
+                </form>
+                <br>
+                <p>Add Custom Card</p>
+                <form action="/card/create" method="POST">
+                  <input class="input-signup" type="text" id="title" name="title" placeholder="Title" required>
+                  <input class="input-signup" type="url" id="link" name="link" placeholder="Link" required>
+                  <button type="submit">Submit</button>
+                </form>
+              <br>
+                   <div class="links mt-3">
+                     <p>Your Links</p>
+            <% cards.forEach(function(card){ %>
+              <a id="<%- card._id %>" class="links-btn" href="<%- card.link || "#"%>" target="_blank"><%- card.title || "Card Title" %></a>
+            <% }) %>  
+        </div>
+            </div>
+            <% include ./partials/footer %>
+        </div>
+
+    </body>
+
+    </html>

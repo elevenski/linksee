@@ -1,0 +1,162 @@
+@import"https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap";
+
+body {
+	font-family: "Inter";
+	background-color: white;
+	color: black;
+    text-decoration: none
+}
+
+img {
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 640px) {
+	.this-is-section {
+		padding-left: 27%;
+		padding-right: 27%
+	}
+  .links-btn {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+	.this-is-section {
+		padding-left: 3%;
+		padding-right: 3%
+	}
+  .links-btn {
+    font-size: 15px;
+  }
+}
+
+.this-is-section {
+    float: center;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.user {
+    padding-top: 3%;
+}
+
+.user-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.un-font {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.links {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+.links-btn {
+    width: 100%;
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    transition: .2s;
+    margin: 8px 0;
+    transform: scale(1);
+    border-radius: 999px;
+    font-weight: 500
+}
+
+
+.links-btn:hover {
+    background: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+.social-btn {
+    font-size: 30px;
+    margin-right: 6px;
+    margin-left: 6px;
+    transition: .2s;
+}
+
+.footer {
+    padding-top: 4em
+}
+
+.footer-text {
+    font-size: 13px
+}
+
+.-facebook:hover {
+    color: #1b74e4
+}
+
+.-twitter:hover {
+    color: #1c9aef
+}
+
+.-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.-youtube:hover {
+    color: #fd0000
+}
+
+.-github:hover {
+    color: #842791
+}
+
+.-website:hover {
+    color: #414141
+}
+
+.-discord:hover {
+    color: #5865F2
+}
+
+.-linkedin:hover {
+    color: #0077b7
+}
+
+.-twitch:hover {
+    color: #8c44f7
+}
+
+.-mail:hover {
+    color: #414141
+}
+
+.input-signup {
+  float: center;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 999px
+}
+
+.user-avatar {
+  object-fit: cover !important;
+  width: 100px;
+  height: 100px
+}

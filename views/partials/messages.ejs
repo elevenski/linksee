@@ -1,0 +1,17 @@
+<% if(typeof errors != 'undefined'){ %> <% errors.forEach(function(error) { %>
+<div class="text-red-400 mt-3" role="alert">
+  <%= error.msg %>
+</div>
+<% }); %> <% } %> <% if(success_msg != ''){ %>
+<div class="text-green-400 mt-3" role="alert">
+  <%= success_msg %>
+</div>
+<% } %> <% if(error_msg != ''){ %>
+<div class="text-red-400 mt-3" role="alert">
+  <%= error_msg %>
+</div>
+<% } %> <% if(error != ''){ %>
+<div class="text-red-400 mt-3" role="alert">
+  <%= error %>
+</div>
+<% } %>
